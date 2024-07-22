@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Megha Nilol GR Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
+
+    #typing-animation:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
+      }
+      to {
+        width: 0;
+      }
+    }
+
+    /* project image zoom effect */
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
+
+/* Center the profile image */
+.slider-item .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-item .img img {
+  border-radius: 10%;
+  width: 1000px; /* Adjust the size as needed */
+  height: 550px; /* Adjust the size as needed */
+  object-fit:scale-down;
+  
+}
+
+/* Center the contact information */
+.ftco-footer .contact-info {
+  text-align: center;
+}
+
+/* Additional styles for positioning */
+.one-third {
+  position: relative;
+  background-size: 1000%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-center {
+  text-align: center;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Megha Nilol GR</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+            <div class="one-third js-fullheight order-md-last img" alt="centered Image">
+              <img src="images/profile1.jpg" alt="centered Image" class="profile-img">
+            </div>
+            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <div class="text text-center">
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">I'm <span>Megha Nilol GR</span></h1>
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
+                <script>
+                  // Initialize the typing animation
+                  const typingAnimationElement = document.getElementById('typing-animation');
+                  
+                  // Create an array of typing text
+                  const typingTexts = [
+                    'Engineer  ',
+                    'Coder  ',
+                    'Learner   ',
+                  ];
+                  
+                  // Create a function to display the typing animation for a given text
+                  function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
+                      setTimeout(() => {
+                        typingAnimationElement.textContent += text[i];
+                      }, i * 200); // Increase the delay to slow down the typing animation
+                    }
+                  
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 200);
+                  }
+                  
+                  // Start the typing animation loop
+                  playTypingAnimation(typingTexts[0]);
+                </script>
+                <br><br>
+                <h2>Aspiring Electronics and Communication Engineer</h2>
+                <p><a href="https://www.linkedin.com/in/megha-nilol-a862b0240" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a> 
+                  <a href="https://github.com/megha18303" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 pl-md-5">
+          <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+              <span class="subheading">Welcome to my Portfolio</span>
+              <h2 class="mb-4">About Me</h2>
+              <p class="about-desc">I am an aspiring Electronics and Communication Engineer with a keen interest in Digital Electronics and VLSI design. I have hands-on experience in Verilog coding and have worked on various projects including robotics and automated systems. I am proficient in C and Java programming and have a strong foundation in operating systems.</p>
+            </div>
+          </div>
+          <div class="row skill-mf">
+            <div class="col-md-6 skills-column">
+              <h4 class="mb-4"> Skills</h4>
+              <h5>Hardware Skills</h5>
+              <ul>
+                <li>Digital Electronics</li>
+                <li>VLSI</li>
+                <li>Verilog Coding</li>
+                <li>Analog Electronics</li>
+              </ul>
+            </div>
+            <div class="col-md-8 skills-column">
+              <h5>Software Skills</h5>
+              <ul>
+                <li>C Programming</li>
+                <li>Python Basics</li>
+                <li>Java Programming</li>
+                <li>Operating Systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 pl-md-5">
+          <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+              <span class="subheading">Welcome to my Portfolio</span>
+              <h2 class="mb-4">About Me</h2>
+              <p class="about-desc">I am an aspiring Electronics and Communication Engineer with a keen interest in Digital Electronics and VLSI design. I have hands-on experience in Verilog coding and have worked on various projects including robotics and automated systems. I am proficient in C and Java programming and have a strong foundation in operating systems.</p>
+            </div>
+          </div>
+          <div class="row skill-mf">
+            <div class="col-md-6 skills-column">
+              <h4 class="mb-4"> Skills</h4>
+              <h5>Hardware Skills</h5>
+              <ul>
+                <li>Digital Electronics</li>
+                <li>VLSI</li>
+                <li>Verilog Coding</li>
+                <li>Analog Electronics</li>
+              </ul>
+            </div>
+            <div class="col-md-8 skills-column">
+              <h5>Software Skills</h5>
+              <ul>
+                <li>C Programming</li>
+                <li>Python Basics</li>
+                <li>Java Programming</li>
+                <li>Operating Systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+		<section class="ftco-section ftco-no-pb" id="resume-section">
+			<div class="container">
+			  <div class="row justify-content-center mb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+				  <span class="subheading">Education </span>
+				  <h2 class="mb-4">Education</h2>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-md-12">
+				  <!-- Block 1 -->
+				  <div class="resume-wrap ftco-animate">
+					<div class="d-flex">
+					  <div class="icon d-flex align-items-center justify-content-center">
+						<span class="flaticon-ideas"></span>
+					  </div>
+					  <div class="text pl-3">
+						<span class="date">2017-2018</span>
+						<h2>School</h2>
+						<span class="position">Maganur Basappa School</span>
+						<p>Completed Secondary Education with a percentage of 91%</p>
+					  </div>
+					</div>
+				  </div>
+				  
+				  <!-- Block 2 -->
+				  <div class="resume-wrap ftco-animate">
+					<div class="d-flex">
+					  <div class="icon d-flex align-items-center justify-content-center">
+						<span class="flaticon-ideas"></span>
+					  </div>
+					  <div class="text pl-3">
+						<span class="date">2019-2021</span>
+						<h2>PU College</h2>
+						<span class="position">Anand Academy</span>
+						<p>Completed Higher Secondary Education with a percentage of 99%</p>
+					  </div>
+					</div>
+				  </div>
+				  
+				  <!-- Block 3 -->
+				  <div class="resume-wrap ftco-animate">
+					<div class="d-flex">
+					  <div class="icon d-flex align-items-center justify-content-center">
+						<span class="flaticon-ideas"></span>
+					  </div>
+					  <div class="text pl-3">
+						<span class="date">2020-2024</span>
+						<h2>Bachelor of Engineering</h2>
+						<span class="position">Electronics and Communication</span>
+						<p>Graduated with a CGPA of 9.08. Completed various projects and coursework in Digital Electronics, VLSI, and programming languages.</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+			  
+
+			
+
+
+<section class="ftco-section ftco-no-pb" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <span class="subheading">Projects</span>
+        <h2 class="mb-4">My Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center mb-4" style="background-color: #f0f0f0;">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">Automatic Water Dispenser</a></h3>
+            <span>Electronics Project :</span>
+            <span>   This system using MIT App Inventor, which seamlessly
+              integrates hardware components such as an Arduino,
+              ultrasonic sensor, relay module, air pump, and LCD display.
+              This project aimed to automate the process of dispensing
+              water, ensuring precision and efficiency in water usage</span>
+          </div>
+        </div>
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center mb-4" style="background-color: #f0f0f0;">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">Advanced Robotics Projects</a></h3>
+            <span> * Line Follower Robot is made using Arduino, designed to
+              autonomously follow a predefined path marked by a line
+              on the ground.  
+             <p>* Voice Controlled Robot is Developed using Arduino,
+              enabling control of the robot's movements through voice
+              commands using MIT app inventor.</p> </span>
+          </div>
+        </div>
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center mb-4" style="background-color: #f0f0f0;">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">Client-Server Chat System</a></h3>
+            <span>Software Project: Developed a secure Client-Server Chat System using Python,
+              featuring a custom user interface and Advanced Encryption
+              Standard (AES) encryption to ensure the privacy and
+              security of communications.</span>
+          </div>
+        </div>
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center mb-4" style="background-color: #f0f0f0;">
+          <div class="overlay"></div>
+          <div class="text text-center p-4">
+            <h3><a href="#">Voting Machine</a></h3>
+            <span>Verilog Project:  Designed and implemented a digital Voting Machine using
+              Verilog, aimed at ensuring secure and reliable electronic
+              voting. This project involved creating a hardware
+              description of the voting system, including vote recording,
+              tallying, and result display</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+<section class="ftco-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <span class="subheading">Contact</span>
+        <h2 class="mb-4">Get in Touch</h2>
+      </div>
+    </div>
+    <div class="row d-flex contact-info">
+      <div class="col-md-6 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 py-md-5 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Address</h3>
+          <p> Banglore , Karnataka</p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 py-md-5 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-phone2"></span>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p><a href="tel://1234567920">+9686514302</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	  
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg"
+      cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22"
+      fill="none" stroke-width="4" stroke="#F96D00" /></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
